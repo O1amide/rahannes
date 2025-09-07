@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahannes Luxury Homes - Premium Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>RH homes</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#listings" class="nav-link">Listings</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="listings.html" class="nav-link nav-cta">View All Properties</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Discover Your Dream Home with Rahannes Homes</h1>
+                <p class="hero-subtitle">Your trusted real estate expert with alot of premium listings in the most desirable locations. Experience luxury living at its finest.</p>
+                <div class="hero-buttons">
+                    <a href="#listings" class="btn btn-primary">View Listings</a>
+                    <a href="#contact" class="btn btn-secondary">Book a Tour</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-home"></i>
+                    <p>Premium Property Showcase</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+           <!--<div class="stat">
+                <h3>10+</h3>
+                <p>Premium Listings</p>
+            </div>-->
+            <div class="stat">
+                <h3>5+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Rahannes Luxury homes</h2>
+                    <p class="about-description">
+                        At RH homes, we specialize in connecting discerning clients with exceptional properties. 
+                        With years of expertise in the luxury real estate market, we understand that finding the perfect 
+                        home is more than just a transaction—it's about discovering a lifestyle that matches your vision.
+                    </p>
+                    <p class="about-description">
+                        Our curated portfolio features premium properties in the most sought-after locations, each 
+                        carefully selected for its unique character, architectural excellence, and investment potential. 
+                        We pride ourselves on providing personalized service and expert guidance throughout your real estate journey.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Expert Guidance</h4>
+                            <p>Professional advice from experienced real estate specialists</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-key"></i>
+                            <h4>Premium Properties</h4>
+                            <p>Carefully curated selection of luxury homes and investments</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Personalized Service</h4>
+                            <p>Tailored approach to meet your unique needs and preferences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Listings Section -->
+    <section id="listings" class="featured-listings">
+        <div class="container">
+            <h2 class="section-title">Featured Properties</h2>
+            <p class="section-subtitle">Discover our handpicked selection of premium properties</p>
+            
+            <div class="listings-grid">
+                <!-- Property A -->
+                <!-- Property Card -->
+<div class="property-card">
+    <div class="property-image">
+        <div class="image-placeholder">
+            <div class="property-image">
+    <video src="IMG_1307.MP4" autoplay muted loop></video>
+    <div class="property-badge">New</div>
+</div>
+
+        </div>
+        <div class="property-badge">New</div>
+    </div>
+    <div class="property-info">
+        <h3 class="property-title">Freshly Baked 3 Bedroom Apartment</h3>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1, off Fola Osibo
+        </p>
+        <p class="property-price">₦230,000</p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+            <span><i class="fas fa-layer-group"></i> 3rd Floor</span>
+        </div>
+        <button class="btn btn-outline" onclick="openModal('aptIMG1307')">View Details</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1307" onclick="overlayClose(event, 'aptIMG1307')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1307')">×</button>
+        <h2>3 Bedroom Apartment – Lekki Phase 1</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1307.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Swimming Pool</li>
+                <li>Gym</li>
+                <li>PS5 Console</li>
+                <li>Elevator</li>
+            </ul>
+            <p><strong>Location:</strong> Lekki Phase 1, off Fola Osibo</p>
+            <p><strong>Price:</strong> ₦230,000</p>
+            <p>Available from today! Please send in your booking.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Base modal overlay */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Modal content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none;
+    color: #333;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Video section */
+.media-video video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .modal-content {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .close-btn {
+        font-size: 24px;
+    }
+}
+</style>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function overlayClose(event, id) {
+    if (event.target.classList.contains('modal')) {
+        closeModal(id);
+    }
+}
+</script>
+
+                <!-- Property B -->
+                <!-- Property Card -->
+<div class="property-card">
+    <div class="property-image">
+        <div class="image-placeholder">
+            <div class="property-image">
+    <video src="IMG_1506.MP4" autoplay muted loop></video>
+    <div class="property-badge">New</div>
+</div>
+
+        </div>
+        <div class="property-badge">New</div>
+    </div>
+    <div class="property-info">
+        <h3 class="property-title">2-Bedroom Smart Apartment</h3>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Off Gbangbala Street, Lekki Ikate
+        </p>
+        <p class="property-price">₦230,000/night (Launch Price)</p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> Walk-in Shower</span>
+            <span><i class="fas fa-swimmer"></i> Pool & Gym</span>
+        </div>
+        <button class="btn btn-outline" onclick="openModal('aptIMG1506')">View Details</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1506" onclick="overlayClose(event, 'aptIMG1506')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1506')">×</button>
+        <h2>2-Bedroom Smart Apartment – Lekki Ikate</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1506.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Smart Home – Alexa enabled</li>
+                <li>Smart TV – Netflix, YouTube</li>
+                <li>Smart Door Lock (self check-in)</li>
+                <li>24/7 WiFi – Super strong</li>
+                <li>Swimming Pool – Very clean</li>
+                <li>Fully Equipped Gym</li>
+                <li>PS5 (on request)</li>
+                <li>Automated Curtains</li>
+                <li>Fully Equipped Kitchen</li>
+                <li>24/7 Power</li>
+                <li>24/7 Security (access code)</li>
+                <li>Walk-in Shower</li>
+                <li>Washing Machine</li>
+                <li>Refrigerator</li>
+                <li>Elevator</li>
+                <li>Balconies for relaxation & smoking</li>
+                <li>Parking Space</li>
+            </ul>
+            <p><strong>Rate:</strong> ₦230,000/night (Launch Price)</p>
+            <p><strong>Caution:</strong> ₦100,000 (refundable)</p>
+            <p>Available for bookings.</p>
+        </div>
+    </div>
+</div>
+
+
+                <!-- Property C -->
+                <!-- Property Card -->
+<div class="property-card">
+    <div class="property-image">
+        <div class="image-placeholder">
+            <div class="property-image">
+    <video src="IMG_1507.MP4" autoplay muted loop></video>
+    <div class="property-badge">New</div>
+</div>
+
+        </div>
+        <div class="property-badge">Featured</div>
+    </div>
+    <div class="property-info">
+        <h3 class="property-title">NAPHTALI – 4 Bedroom Terrace Duplex</h3>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1
+        </p>
+        <p class="property-price">₦450,000/night</p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 4 Bedrooms</span>
+            <span><i class="fas fa-swimmer"></i> Swimming Pool</span>
+            <span><i class="fas fa-car"></i> Dedicated Parking</span>
+        </div>
+        <button class="btn btn-outline" onclick="openModal('aptIMG1507')">View Details</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1507" onclick="overlayClose(event, 'aptIMG1507')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1507')">×</button>
+        <h2>NAPHTALI – En-suite 4 Bedroom Terrace Duplex</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1507.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Location:</strong> Lekki Phase 1</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Treated Water Supply</li>
+                <li>Swimming Pool</li>
+                <li>PS5</li>
+                <li>City View</li>
+                <li>Bathtub</li>
+                <li>Very Private Environment</li>
+                <li>Open Plan Island Kitchen</li>
+                <li>All Rooms Ensuite with AC, Smart TV (Netflix), Water Heaters</li>
+                <li>Family Lounge</li>
+                <li>Private Balcony Access</li>
+                <li>Fully Fitted Kitchen with Laundry</li>
+                <li>Smart Self Check-In System</li>
+                <li>24/7 Power Supply</li>
+                <li>24/7 Security</li>
+                <li>Super-Fast Internet Connection</li>
+                <li>Netflix & DSTV</li>
+                <li>Dedicated Car Park</li>
+                <li>Proximity to Major Spots in Lekki</li>
+                <li>Lovely Ambiance & Nice Aesthetics</li>
+                <li>Minimum of 3 Nights Booking</li>
+            </ul>
+            <p><strong>Price:</strong> ₦450,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000</p>
+        </div>
+    </div>
+</div>
+
+    <!-- View All Listings Section -->
+    <section class="view-all-section">
+        <div class="container">
+            <div class="view-all-content">
+                <h2>Explore Our Complete Portfolio</h2>
+                <p>Browse through our extensive collection of premium properties and find your perfect match</p>
+                <a href="listings.html" class="btn btn-primary btn-large">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Rahannes Homes made our dream home search effortless. Their expertise and attention to detail exceeded our expectations. We couldn't be happier with our new luxury villa."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JD</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>John & Sarah Davis</h4>
+                            <p>Beverly Hills Residents</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional, knowledgeable, and truly dedicated to finding the perfect property. The team at Rahannes Homes guided us through every step of the process with exceptional service."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MR</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Manhattan Investor</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding service from start to finish. They understood our vision and helped us find a waterfront property that perfectly matches our lifestyle. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>EW</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Wilson</h4>
+                            <p>Miami Beach Homeowner</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Lead Capture Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Book a Tour or Make an Inquiry</h2>
+                    <p>Ready to find your dream home? Get in touch with our expert team today.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+234 (80) 825-56384</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>Kairaolayiwola2307@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Office</h4>
+                                <p>Midak mews, Tunji sulaimon street, Lekki Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <form class="contact-form" id="contactForm">
+    <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your dream home or any questions you have..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-large">Send via WhatsApp</button>
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rahannes Homes</h3>
+                    <p>Your trusted partner in luxury real estate. Connecting you with exceptional properties and unparalleled service.</p>
+                    <div class="social-links">
+                        <!--<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>-->
+                        <a href="https://www.instagram.com/rahannes_luxuryhomes?igsh=MWN3c2J1bGp2dW1hMg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@rahannes_luxury?_t=ZS-8zP2Y0cNHEn&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <!--<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>-->
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="listings.html">All Properties</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Property Sales</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Short-let Apartment</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +234 (80) 825-56384</p>
+                        <p><i class="fas fa-envelope"></i> Kairaolayiwola2307@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Midak mews, Tunji sulaimon street, Lekki Lagos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahannes Luxury Homes. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

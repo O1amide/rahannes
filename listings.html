@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Properties - Rahannes Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Rahannes Luxury Homes</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="#" class="nav-link active">Listings</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="index.html#contact" class="nav-link nav-cta">Book a Tour</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>All Properties</h1>
+                <p>Explore our complete collection of premium real estate listings</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>All Properties</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters">
+    <div class="container">
+        <div class="filters-content">
+            <!-- Price Range -->
+            <div class="filter-group">
+                <label for="priceRange">Price/Night</label>
+                <select id="priceRange">
+                    <option value="">All Prices</option>
+                    <option value="0-100000">Under ₦100k</option>
+                    <option value="100000-200000">₦100k - ₦200k</option>
+                    <option value="200000-300000">₦200k - ₦300k</option>
+                    <option value="300000+">₦300k+</option>
+                </select>
+            </div>
+
+            <!-- Property Type -->
+            <div class="filter-group">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType">
+                    <option value="">All Types</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="terrace">Terrace Duplex</option>
+                    <option value="penthouse">Penthouse</option>
+                    <option value="studio">Studio</option>
+                </select>
+            </div>
+
+            <!-- Location -->
+            <div class="filter-group">
+                <label for="location">Location</label>
+                <select id="location">
+                    <option value="">All Locations</option>
+                    <option value="lekki-phase-1">Lekki Phase 1</option>
+                    <option value="ikate">Ikate</option>
+                    <option value="gbangbala">Gbangbala</option>
+                    <option value="ikoyi">Ikoyi</option>
+                </select>
+            </div>
+
+            <!-- Bedrooms -->
+            <div class="filter-group">
+                <label for="bedrooms">Bedrooms</label>
+                <select id="bedrooms">
+                    <option value="">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+            </div>
+
+            <!-- Apply Button -->
+            <button class="btn btn-primary filter-btn">Apply Filters</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Properties Grid -->
+    <section class="all-properties">
+        <div class="container">
+            <div class="properties-header">
+                <h2>Premium Properties</h2>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Property A -->
+                <div class="property-card" 
+     data-price="230000" 
+     data-type="apartment" 
+     data-location="lekki-phase-1" 
+     data-bedrooms="3">
+
+    <div class="property-image">
+        <!-- Video Thumbnail / Placeholder -->
+        <video src="IMG_1307.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">3-Bedroom Apartment</h3>
+            <p class="property-price">₦230,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1, off Fola Osibo
+        </p>
+        <p class="property-description">
+            Luxurious 3-bedroom apartment on the 3rd floor featuring a swimming pool, gym, PS5 console, and elevator. Available for bookings from today.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+            <span><i class="fas fa-layer-group"></i> 3rd Floor</span>
+        </div>
+        <div class="property-footer">
+             <button class="btn btn-outline" onclick="openModal('aptIMG1307')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%203-Bedroom%20Apartment" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1307" onclick="overlayClose(event, 'aptIMG1307')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1307')">×</button>
+        <h2>3 Bedroom Apartment – Lekki Phase 1</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1307.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Swimming Pool</li>
+                <li>Gym</li>
+                <li>PS5 Console</li>
+                <li>Elevator</li>
+            </ul>
+            <p><strong>Location:</strong> Lekki Phase 1, off Fola Osibo</p>
+            <p><strong>Price:</strong> ₦230,000</p>
+            <p>Available from today! Please send in your booking.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Base modal overlay */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Modal content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none;
+    color: #333;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Video section */
+.media-video video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .modal-content {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .close-btn {
+        font-size: 24px;
+    }
+}
+</style>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function overlayClose(event, id) {
+    if (event.target.classList.contains('modal')) {
+        closeModal(id);
+    }
+}
+</script>
+
+                <!-- Property B -->
+<div class="property-card" 
+ data-price="230000" 
+ data-type="apartment" 
+ data-location="lekki-ikate" 
+ data-bedrooms="2">
+
+    <div class="property-image">
+        <!-- Video Thumbnail / Placeholder -->
+        <video src="IMG_1506.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">2-Bedroom Smart Apartment</h3>
+            <p class="property-price">₦230,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Off Gbangbala Street, Lekki Ikate
+        </p>
+        <p class="property-description">
+            Smart 2-bedroom apartment with pool, gym, smart home features, automated curtains, 24/7 WiFi, and more. Perfect for modern living.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+            <span><i class="fas fa-layer-group"></i> Smart Home</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1506')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%202-Bedroom%20Smart%20Apartment%20in%20Lekki%20Ikate" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1506" onclick="overlayClose(event, 'aptIMG1506')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1506')">×</button>
+        <h2>2-Bedroom Smart Apartment – Lekki Ikate</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1506.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Smart home – Alexa enabled</li>
+                <li>Smart TV – Netflix, YouTube</li>
+                <li>Smart Door Lock (self check-in)</li>
+                <li>24/7 WiFi – Super strong</li>
+                <li>Swimming pool – Very clean</li>
+                <li>Fully equipped gym</li>
+                <li>PS5 (on request)</li>
+                <li>Automated curtains</li>
+                <li>Fully equipped kitchen</li>
+                <li>24/7 Power & Security</li>
+                <li>Walk-in shower</li>
+                <li>Washing machine & Refrigerator</li>
+                <li>Elevator & Parking space</li>
+            </ul>
+            <p><strong>Location:</strong> Off Gbangbala Street, Lekki Ikate</p>
+            <p><strong>Price:</strong> ₦230,000/night (Launch Price) + ₦100,000 refundable caution fee</p>
+            <p>Available for bookings. Send your booking now!</p>
+        </div>
+    </div>
+</div>
+                <!-- Property C -->
+<div class="property-card" 
+ data-price="450000" 
+ data-type="terrace-duplex" 
+ data-location="lekki-phase-1" 
+ data-bedrooms="4">
+
+    <div class="property-image">
+        <!-- Video Thumbnail / Placeholder -->
+        <video src="IMG_1507.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge featured">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">4-Bedroom En-suite Terrace Duplex</h3>
+            <p class="property-price">₦450,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1
+        </p>
+        <p class="property-description">
+            Fully furnished 4-bedroom en-suite terrace duplex in a serene estate of only 10 flats with premium facilities and ultimate privacy.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 4 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> 4.5 Bathrooms</span>
+            <span><i class="fas fa-home"></i> Terrace Duplex</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1507C')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%204-Bedroom%20Terrace%20Duplex%20(Property%20C)%20in%20Lekki%20Phase%201" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1507C" onclick="overlayClose(event, 'aptIMG1507C')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1507C')">×</button>
+        <h2>NAPHTALI – 4-Bedroom En-suite Terrace Duplex</h2>
+        
+        <!-- Video Section -->
+        <div class="media-video">
+            <video src="IMG_1507.MP4" controls autoplay muted loop></video>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Treated Water Supply</li>
+                <li>Swimming Pool</li>
+                <li>PS5</li>
+                <li>City View</li>
+                <li>Bathtub</li>
+                <li>Very Private (Only 10 Flats)</li>
+                <li>Open Plan Island Kitchen</li>
+                <li>All Rooms Ensuite with AC, Smart TV & Water Heaters</li>
+                <li>Family Lounge</li>
+                <li>Private Balcony Access</li>
+                <li>Smart Self Check-In System</li>
+                <li>24/7 Power & Security</li>
+                <li>Super-Fast Internet</li>
+                <li>Netflix & DSTV</li>
+                <li>Dedicated Car Park</li>
+                <li>Lovely Ambience & Nice Aesthetics</li>
+                <li>Minimum of 3 Nights Booking</li>
+            </ul>
+            <p><strong>Location:</strong> Lekki Phase 1</p>
+            <p><strong>Price:</strong> ₦450,000/night + ₦100,000 refundable caution fee</p>
+            <p>Available now! Send your booking request today.</p>
+        </div>
+    </div>
+</div>
+                
+                <!-- Property D 
+                <div class="property-card" data-price="3200000" data-type="condo" data-location="malibu" data-bedrooms="3">
+                    <div class="property-image">
+                        <div class="image-placeholder">
+                            <span>Property D</span>
+                        </div>
+                        <div class="property-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                                <span>Property Video</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn" title="Add to Favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn" title="Share Property">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-header">
+                            <h3 class="property-title">Oceanview Luxury Condo</h3>
+                            <p class="property-price">$3,200,000</p>
+                        </div>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Malibu, CA
+                        </p>
+                        <p class="property-description">
+                            Exclusive oceanview condominium with floor-to-ceiling windows, premium amenities, and direct beach access in prestigious Malibu.
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,400 sq ft</span>
+                            <span><i class="fas fa-water"></i> Ocean View</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="#" class="btn btn-outline">View Details</a>
+                            <a href="#" class="btn btn-primary">Schedule Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             Load More Button
+            <div class="load-more-section">
+                <button class="btn btn-outline btn-large" id="loadMoreBtn">
+                    Load More Properties
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>-->
+            <!-- Property D -->
+<div class="property-card" 
+    data-price="450000" 
+    data-type="penthouse" 
+    data-location="ikoyi" 
+    data-bedrooms="4">
+
+    <div class="property-image">
+        <!-- Main Video Thumbnail -->
+        <video src="IMG_1570.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">4-Bedroom Waterfront Penthouse Duplex</h3>
+            <p class="property-price">₦450,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Orsbone Foreshore Phase 2, Ikoyi
+        </p>
+        <p class="property-description">
+            Luxe 4-bedroom waterfront penthouse duplex with exquisite amenities including WiFi, PS5, Netflix, snooker, and more.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 4 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> Multiple Baths</span>
+            <span><i class="fas fa-water"></i> Waterfront</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1570')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%204-Bedroom%20Waterfront%20Penthouse%20Duplex" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1570" onclick="overlayClose(event, 'aptIMG1570')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1570')">×</button>
+        <h2>4-Bedroom Waterfront Penthouse Duplex – Ikoyi</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <video src="IMG_1570.MP4" controls autoplay muted loop></video>
+                <img src="IMG_1572.JPG" alt="Property Image">
+                <img src="IMG_1573.JPG" alt="Property Image">
+                <img src="IMG_1574.JPG" alt="Property Image">
+                <img src="IMG_1575.JPG" alt="Property Image">
+                <img src="IMG_1576.JPG" alt="Property Image">
+                <img src="IMG_1577.JPG" alt="Property Image">
+                <img src="IMG_1578.JPG" alt="Property Image">
+                <img src="IMG_1579.JPG" alt="Property Image">
+                <img src="IMG_1580.JPG" alt="Property Image">
+                <img src="IMG_1581.JPG" alt="Property Image">
+                <img src="IMG_1582.JPG" alt="Property Image">
+                <img src="IMG_1583.JPG" alt="Property Image">
+                <img src="IMG_1584.JPG" alt="Property Image">
+                <img src="IMG_1585.JPG" alt="Property Image">
+                <img src="IMG_1586.JPG" alt="Property Image">
+                <img src="IMG_1587.JPG" alt="Property Image">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1570', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1570', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>WiFi, PS5, Netflix, Snooker</li>
+                <li>Bathtub, Breakfast (optional)</li>
+                <li>Housekeeping & Cleaning services</li>
+                <li>Smart TVs, AC, Balcony, Parking</li>
+                <li>Waterfront view</li>
+            </ul>
+            <p><strong>Location:</strong> Orsbone Foreshore Phase 2, Ikoyi</p>
+            <p><strong>Rate:</strong> ₦450,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000 (refundable)</p>
+            <p>No smoking indoors. No parties allowed.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Modal Base */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.carousel-track img,
+.carousel-track video {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    max-height: 300px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none;
+    color: #333;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .modal-content { max-width: 100%; border-radius: 8px; }
+    .close-btn { font-size: 24px; }
+}
+</style>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function overlayClose(event, id) {
+    if (event.target.classList.contains('modal')) {
+        closeModal(id);
+    }
+}
+function moveCarousel(modalId, direction) {
+    const track = document.querySelector(`#${modalId} .carousel-track`);
+    const items = track.children.length;
+    let currentIndex = parseInt(track.getAttribute('data-index') || 0);
+    currentIndex = (currentIndex + direction + items) % items;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    track.setAttribute('data-index', currentIndex);
+}
+</script>
+        </div>
+
+        <!-- Property Loft Ikate -->
+<div class="property-card" 
+    data-price="200000" 
+    data-type="loft" 
+    data-location="ikate" 
+    data-bedrooms="2">
+
+    <div class="property-image">
+        <!-- Main Video Thumbnail -->
+        <video src="IMG_1651.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">2-Bedroom Loft Apartment with PS5</h3>
+            <p class="property-price">₦200,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Ikate (Right)
+        </p>
+        <p class="property-description">
+            Luxurious 2-bedroom loft with balcony, smart door, PS5, Netflix, DSTV, daily cleaning, walk-in closet, and more.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> Bath Tub</span>
+            <span><i class="fas fa-wifi"></i> Superfast WiFi</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1651')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%202-Bedroom%20Loft%20Apartment%20at%20Ikate%20for%20%E2%82%A6200,000/night" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1651" onclick="overlayClose(event, 'aptIMG1651')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1651')">×</button>
+        <h2>2-Bedroom Loft Apartment – Ikate (Right)</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Videos First -->
+                <video src="IMG_1601.MP4" controls></video>
+                <video src="IMG_1635.MP4" controls></video>
+                <video src="IMG_1637.MP4" controls></video>
+                <video src="IMG_1638.MP4" controls></video>
+                <video src="IMG_1639.MP4" controls></video>
+                <video src="IMG_1640.MP4" controls></video>
+                <video src="IMG_1641.MP4" controls></video>
+                <video src="IMG_1642.MP4" controls></video>
+                <video src="IMG_1643.MP4" controls></video>
+                <video src="IMG_1644.MP4" controls></video>
+                <video src="IMG_1647.MP4" controls></video>
+                <video src="IMG_1650.MP4" controls></video>
+                <video src="IMG_1651.MP4" controls></video>
+
+                <!-- Images -->
+                <img src="IMG_1623.JPG" alt="Property Image">
+                <img src="IMG_1624.JPG" alt="Property Image">
+                <img src="IMG_1625.JPG" alt="Property Image">
+                <img src="IMG_1626.JPG" alt="Property Image">
+                <img src="IMG_1627.JPG" alt="Property Image">
+                <img src="IMG_1628.JPG" alt="Property Image">
+                <img src="IMG_1629.JPG" alt="Property Image">
+                <img src="IMG_1630.JPG" alt="Property Image">
+                <img src="IMG_1631.JPG" alt="Property Image">
+                <img src="IMG_1632.JPG" alt="Property Image">
+                <img src="IMG_1633.JPG" alt="Property Image">
+                <img src="IMG_1646.JPG" alt="Property Image">
+                <img src="IMG_1648.JPG" alt="Property Image">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1651', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1651', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>En-suite rooms, Balcony, Automated Door</li>
+                <li>PS5, Netflix, DSTV, Smart TV</li>
+                <li>Daily Cleaning, Walk-in Closet, Bath Tub</li>
+                <li>Superfast WiFi, Dedicated Parking, 24/7 Power</li>
+                <li>Romantic Bathroom, Washing Machine</li>
+            </ul>
+            <p><strong>Price:</strong> ₦200,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000 (refundable)</p>
+        </div>
+    </div>
+</div>
+
+      <!-- Property Maisonette Lekki -->
+<div class="property-card" 
+    data-price="400000" 
+    data-type="maisonette" 
+    data-location="lekki-phase-1" 
+    data-bedrooms="3">
+
+    <div class="property-image">
+        <!-- Main Video Thumbnail -->
+        <video src="IMG_1649.MP4" autoplay muted loop></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">3-Bedroom Maisonette</h3>
+            <p class="property-price">₦400,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            The Residence, Parez Drive, Lekki Phase 1
+        </p>
+        <p class="property-description">
+            Luxurious 3-bedroom maisonette with pool, PS5, snooker, walk-in closet, and premium amenities.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+            <span><i class="fas fa-bath"></i> Bath Tub</span>
+            <span><i class="fas fa-wifi"></i> Superfast WiFi</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1649')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%203-Bedroom%20Maisonette%20at%20The%20Residence%2C%20Lekki%20Phase%201%20for%20%E2%82%A6400%2C000/night" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1649" onclick="overlayClose(event, 'aptIMG1649')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1649')">×</button>
+        <h2>3-Bedroom Maisonette – The Residence, Lekki Phase 1</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                
+                <!-- Videos -->
+                <video src="IMG_1649.MP4" controls></video>
+                <video src="IMG_1636.MP4" controls></video>
+
+                <!-- Images First -->
+                <img src="IMG_1605.JPG" alt="Property Image">
+                <img src="IMG_1608.JPG" alt="Property Image">
+                <img src="IMG_1607.JPG" alt="Property Image">
+                <img src="IMG_1604.JPG" alt="Property Image">
+                <img src="IMG_1602.JPG" alt="Property Image">
+                <img src="IMG_1606.JPG" alt="Property Image">
+                <img src="IMG_1610.JPG" alt="Property Image">
+                <img src="IMG_1613.JPG" alt="Property Image">
+                <img src="IMG_1614.JPG" alt="Property Image">
+                <img src="IMG_1615.JPG" alt="Property Image">
+                <img src="IMG_1620.JPG" alt="Property Image">
+                <img src="IMG_1622.JPG" alt="Property Image">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1649', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1649', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Gated & Secured Estate, 2 Sitting Rooms</li>
+                <li>Snooker, Pool, PS5, Bath Tub</li>
+                <li>24/7 Power, Superfast Internet</li>
+                <li>Walk-in Closet, Smart TV, Netflix/YouTube/DSTV</li>
+                <li>Housekeeping, Balcony, Car Park, Washing Machine</li>
+                <li>Equipped Kitchen (Gym under construction)</li>
+            </ul>
+            <p><strong>Price:</strong> ₦400,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000 (refundable)</p>
+        </div>
+    </div>
+</div>
+
+<!-- Property Euphoria Loft -->
+<div class="property-card" 
+    data-price="250000" 
+    data-type="loft" 
+    data-location="lekki-phase-1" 
+    data-bedrooms="1">
+
+    <div class="property-image">
+        <!-- Main Thumbnail -->
+        <img src="IMG_1679.JPG" alt="Euphoria Loft">
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-eye"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge premium">Premium</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">EUPHORIA – 1 Bedroom Loft</h3>
+            <p class="property-price">₦250,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1
+        </p>
+        <p class="property-description">
+            Elegant 1-bedroom loft with piano, two balconies, pool, and exclusive luxury amenities.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 1 Bedroom</span>
+            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+            <span><i class="fas fa-wifi"></i> Superfast WiFi</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1679')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=I%20want%20to%20book%20the%20EUPHORIA%20Loft%20at%20Lekki%20Phase%201%20for%20%E2%82%A6250%2C000/night%20(min.%202%20nights)" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1679" onclick="overlayClose(event, 'aptIMG1679')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1679')">×</button>
+        <h2>EUPHORIA – 1 Bedroom Loft (Lekki Phase 1)</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Images (All first) -->
+                <img src="IMG_1679.JPG" alt="Euphoria Loft">
+                <img src="IMG_1681.JPG" alt="Euphoria Loft">
+                <img src="IMG_1683.JPG" alt="Euphoria Loft">
+                <img src="IMG_1682.JPG" alt="Euphoria Loft">
+                <img src="IMG_1685.JPG" alt="Euphoria Loft">
+                <img src="IMG_1686.JPG" alt="Euphoria Loft">
+                <img src="IMG_1684.JPG" alt="Euphoria Loft">
+                <img src="IMG_1688.JPG" alt="Euphoria Loft">
+                <img src="IMG_1687.JPG" alt="Euphoria Loft">
+                <img src="IMG_1690.JPG" alt="Euphoria Loft">
+                <img src="IMG_1689.JPG" alt="Euphoria Loft">
+                <img src="IMG_1691.JPG" alt="Euphoria Loft">
+                <img src="IMG_1694.JPG" alt="Euphoria Loft">
+                <img src="IMG_1692.JPG" alt="Euphoria Loft">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1679', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1679', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Facilities Include:</strong></p>
+            <ul>
+                <li>Gated & Secured Estate, 24/7 Security & Power</li>
+                <li>Piano, Two Balconies with Sit-Out</li>
+                <li>Complimentary Fruit Tray & Bottle Water</li>
+                <li>Netflix / YouTube / DSTV</li>
+                <li>Housekeeping & Car Rental Available</li>
+                <li>Open Plan Kitchen, Dedicated Car Park</li>
+                <li>Pool, CCTV Camera, Smart Door Lock</li>
+            </ul>
+            <p><strong>Rate:</strong> ₦250,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000</p>
+            <p><strong>Minimum Stay:</strong> 2 Nights</p>
+        </div>
+    </div>
+</div>
+
+<!-- Property Luxury 2-Bedroom Apartment -->
+<div class="property-card" 
+    data-price="150000" 
+    data-type="apartment" 
+    data-location="lekki" 
+    data-bedrooms="2">
+
+    <div class="property-image">
+        <!-- Main Thumbnail (Video) -->
+        <video src="IMG_1452.MP4" muted loop autoplay playsinline></video>
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-eye"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">Luxury 2-Bedroom Apartment – Lekki</h3>
+            <p class="property-price">₦150,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Kizz Daniel Street, off Lekki Enclave, Lagos
+        </p>
+        <p class="property-description">
+            Perfect for short & long stay with high-speed WiFi, PS5 (on request), and modern luxury amenities.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-wifi"></i> High-Speed WiFi</span>
+            <span><i class="fas fa-key"></i> Smart Door Lock</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1452')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=Hello%2C%20I%27m%20interested%20in%20booking%20the%20Luxury%202-Bedroom%20Apartment%20at%20Lekki%20for%20%E2%82%A6150%2C000/night.%20Is%20it%20available%20from%20July%2020th%3F" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1452" onclick="overlayClose(event, 'aptIMG1452')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1452')">×</button>
+        <h2>Luxury 2-Bedroom Apartment – Lekki</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <video src="IMG_1452.MP4" controls></video>
+                <img src="IMG_1720.JPG" alt="Living Room View">
+                <img src="IMG_1718.JPG" alt="Bedroom View">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1452', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1452', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Location:</strong> Kizz Daniel Street off Lekki Enclave, opposite Freedom Way, Lekki, Lagos</p>
+            <p><strong>Price:</strong> ₦150,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦50,000 (Refundable)</p>
+            <p><strong>Available from:</strong> 20th July</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>24/7 High Profile Security & Power Supply</li>
+                <li>Games – PS5 (on request)</li>
+                <li>Modern Fully Equipped Kitchen</li>
+                <li>Netflix / Prime / DSTV</li>
+                <li>Unlimited High-Speed WiFi</li>
+                <li>Free Parking Space</li>
+                <li>Housekeeping Services</li>
+                <li>En-suite Bathrooms</li>
+                <li>Smart TVs in all rooms</li>
+                <li>Smart Lock / Door Code</li>
+                <li>Private Laundry with Washing Machine</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Property: 2-Bedroom Maisonette -->
+<div class="property-card" 
+    data-price="250000" 
+    data-type="maisonette" 
+    data-location="lekki" 
+    data-bedrooms="2">
+
+    <div class="property-image">
+        <!-- Main Thumbnail (First Image) -->
+        <img src="IMG_1719.JPG" alt="2-Bedroom Maisonette Lekki">
+
+        <!-- Overlay -->
+        <div class="property-overlay">
+            <div class="play-button">
+                <i class="fas fa-eye"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Badge -->
+        <div class="property-badge new">New</div>
+
+        <!-- Actions -->
+        <div class="property-actions">
+            <button class="action-btn" title="Add to Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" title="Share Property">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="property-info">
+        <div class="property-header">
+            <h3 class="property-title">2-Bedroom Maisonette – Lekki Phase 1</h3>
+            <p class="property-price">₦250,000/night</p>
+        </div>
+        <p class="property-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Lekki Phase 1, Lagos
+        </p>
+        <p class="property-description">
+            Stylish 2-bedroom maisonette with PS5, swimming pool, 24/7 power, smart home features, and WiFi.
+        </p>
+        <div class="property-details">
+            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+            <span><i class="fas fa-wifi"></i> High-Speed WiFi</span>
+            <span><i class="fas fa-bath"></i> Ensuite Bathrooms</span>
+        </div>
+        <div class="property-footer">
+            <button class="btn btn-outline" onclick="openModal('aptIMG1719')">View Details</button>
+            <a href="https://wa.me/+2348082556384?text=Hello%2C%20I%27m%20interested%20in%20booking%20the%202-Bedroom%20Maisonette%20at%20Lekki%20Phase%201%20for%20%E2%82%A6250%2C000/night.%20Is%20it%20available%3F" class="btn btn-primary">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="aptIMG1719" onclick="overlayClose(event, 'aptIMG1719')">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal('aptIMG1719')">×</button>
+        <h2>2-Bedroom Maisonette – Lekki Phase 1</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="IMG_1719.JPG" alt="Maisonette Image 1">
+                <img src="IMG_1717.JPG" alt="Maisonette Image 2">
+                <img src="IMG_1716.JPG" alt="Maisonette Image 3">
+                <img src="IMG_1714.JPG" alt="Maisonette Image 4">
+                <img src="IMG_1709.JPG" alt="Maisonette Image 5">
+                <img src="IMG_1713.JPG" alt="Maisonette Image 6">
+                <img src="IMG_1715.JPG" alt="Maisonette Image 7">
+                <img src="IMG_1710.JPG" alt="Maisonette Image 8">
+                <img src="IMG_1712.JPG" alt="Maisonette Image 9">
+                <img src="IMG_1707.JPG" alt="Maisonette Image 10">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('aptIMG1719', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('aptIMG1719', 1)">&#10095;</button>
+        </div>
+        
+        <div class="modal-details">
+            <p><strong>Price:</strong> ₦250,000/night</p>
+            <p><strong>Caution Fee:</strong> ₦100,000 (Refundable)</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>PS5</li>
+                <li>Swimming Pool</li>
+                <li>24/7 Power Supply</li>
+                <li>Smart Home</li>
+                <li>WiFi</li>
+                <li>DSTV & Netflix</li>
+                <li>Washing Machine</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Dream Home?</h2>
+                <p>Let our expert team help you discover the perfect property that matches your lifestyle and investment goals.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary btn-large">Book a Consultation</a>
+                    <a href="tel:+15551234567" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rahannes Homes</h3>
+                    <p>Your trusted partner in luxury real estate. Connecting you with exceptional properties and unparalleled service.</p>
+                    <div class="social-links">
+                        <!--<a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>-->
+                        <a href="https://www.instagram.com/rahannes_luxuryhomes?igsh=MWN3c2J1bGp2dW1hMg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@rahannes_luxury?_t=ZS-8zP2Y0cNHEn&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <!--<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>-->
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="listings.html">All Properties</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Property Sales</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Short-let Apartment</a></li>
+                        <li><a href="#">Hospitality</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +234 (80) 825-56384</p>
+                        <p><i class="fas fa-envelope"></i> Kairaolayiwola2307@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Midak mews, Tunji sulaimon street, Lekki Lagos</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahannes Luxury Homes. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
